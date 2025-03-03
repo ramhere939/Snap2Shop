@@ -13,6 +13,14 @@ from numpy.linalg import norm
 import requests
 from io import BytesIO
 
+client_id = st.secrets["google_oauth"]["client_id"]
+client_secret = st.secrets["google_oauth"]["client_secret"]
+project_id = st.secrets["google_oauth"]["project_id"]
+auth_uri = st.secrets["google_oauth"]["auth_uri"]
+token_uri = st.secrets["google_oauth"]["token_uri"]
+redirect_uris = st.secrets["google_oauth"]["redirect_uris"]
+
+
 # Set page title and favicon
 st.set_page_config(page_title="Snap2Shop", page_icon="🛍️")
 
