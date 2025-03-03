@@ -50,8 +50,9 @@ for file in tqdm(original_filenames):
     feature_list.append(extract_features(file, model))
 
 # Save the new cloudinary_filenames list
-# pickle.dump(feature_list, open('embeddings.pkl', 'wb'))
+pickle.dump(feature_list, open('embeddings.pkl', 'wb'))
 pickle.dump(cloudinary_filenames, open('filenames.pkl', 'wb'))
 
-print(f"Done! Created new embeddings.pkl and fileNames.pkl with {len(cloudinary_filenames)} entries.")
+print(f"Done! Created new embeddings.pkl an"
+      f"d fileNames.pkl with {len(cloudinary_filenames)} entries.")
 print("Example of stored filename:", cloudinary_filenames[0])
