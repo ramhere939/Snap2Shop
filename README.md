@@ -18,10 +18,6 @@ Snap2Shop is a **Deep Learning-powered** product recommendation system that find
 
 ---
 
-## 📸 Demo  
-![Demo](demo.gif)  
-
----
 
 ## 🛠 Tech Stack  
 - **Python** (TensorFlow, NumPy, OpenCV)  
